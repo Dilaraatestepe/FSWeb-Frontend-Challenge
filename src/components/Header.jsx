@@ -31,6 +31,7 @@ function Header() {
           <a
             className="text-[#3730A3] mr-6  border-[#3730A3] px-7 py-4 border text-2xl rounded-2xl dark:bg-[#383838] dark:border-[#E1E1FF] dark:text-[#E1E1FF]"
             target="_blank"
+            href="https://github.com/Dilaraatestepe"
           >
             <button className="flex items-center ">
               <i className="fa-brands fa-github fa-xl pr-3" />
@@ -39,7 +40,7 @@ function Header() {
           </a>
           <a
             target="_blank"
-            href="https://tr.linkedin.com/in/dilara-ate%C5%9Ftepe-beyhan-b28b65184?trk=public_profile_samename-profile"
+            href="https://www.linkedin.com/in/dilaraatestepe/"
             className="text-[#3730A3] mr-14  border-[#3730A3] px-7 py-4 border text-2xl rounded-2xl dark:bg-[#383838] dark:border-[#E1E1FF] dark:text-[#E1E1FF] "
           >
             <button className="flex items-center">

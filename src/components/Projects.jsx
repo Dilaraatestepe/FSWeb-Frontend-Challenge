@@ -1,34 +1,5 @@
 import React from "react";
-
-const projects = [
-  {
-    image: "/images/project1.jpg",
-    title: "Witflix",
-    description:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. ",
-    link1: "Github",
-    link2: "View Site",
-    tech: ["react", "axios"],
-  },
-  {
-    image: "/images/project2.jpg",
-    title: "Pizza Ordering Site",
-    description:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline",
-    link1: "Github",
-    link2: "View Site",
-    tech: ["react", "axios"],
-  },
-  {
-    image: "/images/project3.jpg",
-    title: "Portfolio",
-    description:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
-    link1: "Github",
-    link2: "View Site",
-    tech: ["react", "axios", "redux"],
-  },
-];
+import { projects } from "../data";
 
 function Projects() {
   return (

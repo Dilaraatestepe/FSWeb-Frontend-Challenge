@@ -1,44 +1,44 @@
 function Profile() {
   return (
-    <div className="flex flex-col justify-start ml-52 mt-28 mb-10 border-[#BAB2E7] border-y-[2px] mr-52 pb-12 ">
+    <div className="flex flex-col ml-52 mt-28 mb-10 border-[#BAB2E7] border-y-[2px] mr-52 pb-12 ">
       <h1 className="text-[64px] font-semibold text-[#1F2937] mt-6 mb-5 ">
         Profile
       </h1>
-      <div className="flex flex-row">
-        <div className="flex flex-col justify-start w-[30rem]  ">
+      <div className="flex justify-between">
+        <div className="flex flex-col justify-start w-[24rem] ">
           <h2 className="text-[32px] text-[#4338CA] font-medium mb-6">
             Profile
           </h2>
           <nav className="text-[18px] text-[#1F2937] font-bold">
-            <p className="text-[#000000] text-[18px] pb-3">
-              Doğum Tarihi{" "}
-              <span className="text-[#000000] font-medium text-[18px] pl-[52px]">
+            <div className="flex justify-between">
+              <p className="text-[#000000] text-xl ">Date of birth</p>
+              <span className="text-[#000000] font-medium text-xl  ">
                 01.05.1996
               </span>
-            </p>
-            <p className="text-[#000000] text-[18px] pb-3">
-              İkamet Şehri{" "}
-              <span className="text-[#000000] font-medium text-[18px] pl-[60px]">
-                İstanbul
+            </div>
+            <div className="flex justify-between">
+              <p className="text-[#000000] text-xl ">Location</p>
+              <span className="text-[#000000] font-medium text-xl  ">
+                Istanbul
               </span>
-            </p>
-            <p className="text-[#000000] text-[18px] flex">
-              <span>Eğitim Durumu</span>
-              <span className="text-[#000000] font-medium text-[18px] pl-[42px] ">
-                İstanbul Ünv.
-                <br /> Lisans, 2019
+            </div>
+            <div className="flex justify-between">
+              <p className="text-[#000000] text-xl ">Education</p>
+              <span className="text-[#000000] font-medium text-xl  ">
+                Istanbul Univ. <br />
+                License , 2019
               </span>
-            </p>
-            <p className="text-[#000000] text-[18px]">
-              Tercih Ettiği Rol{" "}
-              <span className="text-[#000000] font-medium text-[18px] pl-[32px]">
+            </div>
+            <div className="flex justify-between">
+              <p className="text-[#000000] text-xl ">Preferred Role</p>
+              <span className="text-[#000000] font-medium text-xl ">
                 Frontend, UI
               </span>
-            </p>
+            </div>
           </nav>
         </div>
-        <div className="flex flex-col w-[52rem]">
-          <h2 className="text-[32px] text-[#4338CA] font-medium mb-4">
+        <div className="flex flex-col w-[52rem] pl-48">
+          <h2 className="text-[32px] text-[#4338CA] font-medium mb-4 ">
             About Me
           </h2>
           <p className="text-[18px] text-[#6B7280] ">
