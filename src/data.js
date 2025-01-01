@@ -1,3 +1,5 @@
+import { data } from "react-router-dom";
+
 export const projects = [
   {
     image: "/images/witflix.jpg",
@@ -25,6 +27,33 @@ export const projects = [
     link1: "Github",
     link2: "View Site",
     tech: ["react", "axios", "redux"],
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    title: "JavaScript",
+    description: {
+      en: "JavaScript is a versatile programming language commonly used for web development.",
+      tr: "JavaScript, genellikle web geliştirme için kullanılan çok yönlü bir programlama dilidir.",
+    },
+  },
+  {
+    id: 2,
+    title: "React.JS",
+    description: {
+      en: "React is a JavaScript library for building user interfaces efficiently.",
+      tr: "React, kullanıcı arayüzlerini verimli bir şekilde oluşturmak için kullanılan bir JavaScript kütüphanesidir.",
+    },
+  },
+  {
+    id: 3,
+    title: "Java",
+    description: {
+      en: "Java is a popular object-oriented programming language used for developing platform-independent applications.",
+      tr: "Java, platformdan bağımsız uygulamalar geliştirmek için kullanılan popüler bir nesne yönelimli programlama dilidir.",
+    },
   },
 ];
 
@@ -58,3 +87,5 @@ export const texts = {
     preferredRoleValue: "Frontend, UI",
   },
 };
+
+export default data;

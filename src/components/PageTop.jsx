@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 function PageTop() {
   const [darkMode, setDarkMode] = useState(false);
@@ -8,6 +9,8 @@ function PageTop() {
     setDarkMode(!darkMode);
     document.body.classList.toggle("dark", !darkMode);
   };
+
+  const { toggleLang, lang } = useContext(LanguageContext);
   return (
     <div className="flex flex-col mt-10 mr-52 ">
       <div className="flex flex-row justify-end text-xl ">
@@ -29,7 +32,12 @@ function PageTop() {
         <Link className="text-[#777777] font-bold pr-3">DARK MODE</Link>
 
         <p className="text-[#777777]  font-bold">|</p>
-        <Link className="text-[#4731D3]  font-bold pl-3 "> TÜRKÇE </Link>
+        <Link
+          className="text-[#4731D3]  font-bold pl-3 "
+          onClick={() => toggleLang()}
+        >
+          {lang === "tr" ? "ENGLISH" : "TÜRKÇE"}
+        </Link>
       </div>
       <div className="flex flex-row justify-between pt-6 text-3xl">
         <div className="text-[#4731D3] font-bold ml-52 flex items-center justify-center w-14 h-14 p-3 rounded-full rotate-45  border bg-[#EEEBFF] ">
