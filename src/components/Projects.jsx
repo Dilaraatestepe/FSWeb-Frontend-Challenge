@@ -12,7 +12,7 @@ function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-28">
         {projects.map((project) => (
           <div key={project.id}>
-            <img src={project.image} className="w-full h-48 object-cover" />
+            <img src={project.cover} className="w-full h-48 object-cover" />
             <div className="p-4">
               <h2 className="text-xl font-bold text-[#4338CA] mb-2 dark:text-[#CFCBFF]">
                 {language == "en" ? project.title.en : project.title.tr}

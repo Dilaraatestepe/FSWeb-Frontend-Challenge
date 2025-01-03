@@ -61,7 +61,7 @@ function Header() {
       <div>
         <img
           className="rounded-2xl  w-[38rem] h-[30rem] ml-20 my-4 mt-10"
-          src="https://picsum.photos/300"
+          src="https://picsum.photos/2000"
         />
       </div>
     </div>

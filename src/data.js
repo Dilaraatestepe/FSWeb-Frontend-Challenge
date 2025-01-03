@@ -1,9 +1,13 @@
 import { data } from "react-router-dom";
+import Witflix from "./images/witflix.png";
+import Pizza from "./images/pizza.png";
+import Portfolio from "./images/portfolio.png";
 
 export const projects = [
   {
     id: 1,
-    image: "./public/images/witflix.jpg",
+    cover: Witflix,
+
     title: {
       tr: "Witflix",
       en: "Witflix",
@@ -18,7 +22,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: "./public/images/pizza.jpg",
+    cover: Pizza,
     title: {
       tr: "Pizza Sipariş Sistemi",
       en: "Pizza Order System",
@@ -34,7 +38,7 @@ export const projects = [
 
   {
     id: 3,
-    image: "./public/images/portfolio.jpg",
+    cover: Portfolio,
     title: {
       tr: "Kişisel Web Sitem",
       en: "Personal Website",
