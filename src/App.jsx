@@ -7,17 +7,20 @@ import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { ThemeContextProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
-    <LanguageProvider>
-      <PageTop />
-      <Header />
-      <Skills />
-      <Profile />
-      <Projects />
-      <Footer />
-    </LanguageProvider>
+    <ThemeContextProvider>
+      <LanguageProvider>
+        <PageTop />
+        <Header />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Footer />
+      </LanguageProvider>
+    </ThemeContextProvider>
   );
 }
 

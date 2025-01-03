@@ -2,31 +2,50 @@ import { data } from "react-router-dom";
 
 export const projects = [
   {
-    image: "/images/witflix.jpg",
-    title: "Witflix",
-    description:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. ",
-    link1: "https://github.com/Dilaraatestepe/wit1024-witflix",
-    link2: "https://wit1024-witflix-sepia.vercel.app/",
-    tech: ["react", "axios"],
+    id: 1,
+    image: "./public/images/witflix.jpg",
+    title: {
+      tr: "Witflix",
+      en: "Witflix",
+    },
+    description: {
+      tr: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      en: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..",
+    },
+    tech: ["html", "css", "js"],
+    github: "https://github.com/Dilaraatestepe/wit1024-witflix",
+    view: "https://wit1024-witflix-sepia.vercel.app/",
   },
   {
-    image: "/images/pizza.jpg",
-    title: "Pizza Ordering Site",
-    description:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline",
-    link1: "https://github.com/Dilaraatestepe/fsweb-s8-challenge-pizza",
-    link2: "https://fsweb-s8-challenge-pizza-inky.vercel.app/",
+    id: 2,
+    image: "./public/images/pizza.jpg",
+    title: {
+      tr: "Pizza Sipariş Sistemi",
+      en: "Pizza Order System",
+    },
+    description: {
+      tr: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..",
+      en: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
     tech: ["react", "axios"],
+    github: "https://github.com/Dilaraatestepe/fsweb-s8-challenge-pizza",
+    view: "https://fsweb-s8-challenge-pizza-inky.vercel.app/",
   },
+
   {
-    image: "/images/portfolio.jpg",
-    title: "Portfolio",
-    description:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
-    link1: "Github",
-    link2: "View Site",
-    tech: ["react", "axios", "redux"],
+    id: 3,
+    image: "./public/images/portfolio.jpg",
+    title: {
+      tr: "Kişisel Web Sitem",
+      en: "Personal Website",
+    },
+    description: {
+      tr: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      en: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    tech: ["react", "js", "tailwindcss", "vite"],
+    github: "Github",
+    view: "View Site",
   },
 ];
 
@@ -35,56 +54,43 @@ export const skills = [
     id: 1,
     title: "JavaScript",
     description: {
-      en: "JavaScript is a versatile programming language commonly used for web development.",
-      tr: "JavaScript, genellikle web geliştirme için kullanılan çok yönlü bir programlama dilidir.",
+      en: "JavaScript is a programming language that developers use to create interactive web pages.",
+      tr: "JavaScript, geliştiricilerin etkileşimli web sayfaları oluşturmak için kullandığı bir programlama dilidir.",
     },
   },
   {
     id: 2,
     title: "React.JS",
     description: {
-      en: "React is a JavaScript library for building user interfaces efficiently.",
-      tr: "React, kullanıcı arayüzlerini verimli bir şekilde oluşturmak için kullanılan bir JavaScript kütüphanesidir.",
+      en: "React.JS is an open source javascript library for creating the user agent.",
+      tr: "ReactJS kullanıcı arayüzü oluşturmaya yarayan açık kaynak kodlu bir javascript kütüphanesidir.",
     },
   },
   {
     id: 3,
     title: "Java",
     description: {
-      en: "Java is a popular object-oriented programming language used for developing platform-independent applications.",
-      tr: "Java, platformdan bağımsız uygulamalar geliştirmek için kullanılan popüler bir nesne yönelimli programlama dilidir.",
+      en: "The Java programming language is used across platforms and devices thanks to its easily transferable code.",
+      tr: "Java programlama dili, kolayca aktarılabilir kodu sayesinde platformlar ve cihazlar arasında kullanılır",
     },
   },
 ];
 
-export const texts = {
-  en: {
-    projectsTitle: "Projects",
-    darkMode: "Dark Mode",
-    language: "Türkçe",
-    profileTitle: "Profile",
-    dateOfBirth: "Date of birth",
-    location: "Location",
-    education: "Education",
-    preferredRole: "Preferred Role",
-    dateOfBirthValue: "01.05.1996",
-    locationValue: "Istanbul",
-    educationValue: "Istanbul Univ. Licence, 2019",
-    preferredRoleValue: "Frontend, UI",
+export const profile = {
+  dateOfBirth: "01.05.1996",
+  location: "İstanbul",
+  education: {
+    tr: "İstanbul Üni.",
+    en: "Istanbul Uni.",
   },
-  tr: {
-    projectsTitle: "Projeler",
-    darkMode: "Karanlık Mod",
-    language: "English",
-    profileTitle: "Profil",
-    dateOfBirth: "Doğum Tarihi",
-    location: "Konum",
-    education: "Eğitim",
-    preferredRole: "Tercih Edilen Rol",
-    dateOfBirthValue: "01.05.1996",
-    locationValue: "İstanbul",
-    educationValue: "İstanbul Üniv. Lisans, 2019",
-    preferredRoleValue: "Frontend, UI",
+  licence: {
+    tr: "Lisans,2019",
+    en: "Licence,2019",
+  },
+  preferredRole: "Frontend, UI",
+  about: {
+    tr: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+    en: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
   },
 };
 
