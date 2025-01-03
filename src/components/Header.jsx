@@ -4,17 +4,17 @@ import { useContext } from "react";
 function Header() {
   const { language } = useContext(LanguageContext);
   return (
-    <div className="flex justify-start ml-52 my-10 mb-24 mt-20 ">
+    <div className="flex justify-start ml-52 my-10 mb-24 mt-20 max:flex-col">
       <div>
         <div className="flex flex-row justify-start items-center">
           <div className="border-t-1 w-24 dark: border border-[#BAB2E7]"></div>
-          <p className="text-[20px] pl-2 text-[#4338CA] dark:text-[#BAB2E7] ">
+          <p className=" text-[20px] pl-2 text-[#4338CA] dark:text-[#BAB2E7] max:whitespace-nowrap ">
             Dilara Ateştepe
           </p>
         </div>
-        <div className="flex flex-col text-[#1F2937]">
-          <div className="text-[#1F2937] font-bold dark:text-[#AEBCCF]">
-            <p className="text-[102px]">
+        <div className="flex flex-col text-[#1F2937] ">
+          <div className="text-[#1F2937] font-bold dark:text-[#AEBCCF] max:whitespace-nowrap ">
+            <p className="text-[102px] ">
               {language == "tr" ? "Yaratıcı Düşünür" : "Creative thinker"}
             </p>
             <p className="text-[102px] mt-[-28px]">
@@ -60,7 +60,7 @@ function Header() {
       </div>
       <div>
         <img
-          className="rounded-2xl  w-[38rem] h-[30rem] ml-20 my-4 mt-10"
+          className="rounded-2xl  w-[38rem] h-[30rem] ml-20 my-4 mt-10 max:hidden"
           src="https://picsum.photos/2000"
         />
       </div>

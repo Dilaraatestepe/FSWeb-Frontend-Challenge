@@ -5,7 +5,7 @@ import { LanguageContext } from "../contexts/LanguageContext";
 function Projects() {
   const { language } = useContext(LanguageContext);
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 max:ml-[12rem] max:w-[44rem]">
       <h1 className="text-[64px] font-semibold text-[#1F2937] mb-6 dark:text-[#AEBCCF]">
         {language == "en" ? "Projects" : "Projeler"}
       </h1>

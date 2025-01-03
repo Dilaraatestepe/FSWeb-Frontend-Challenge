@@ -8,8 +8,8 @@ function PageTop() {
   const { theme } = useContext(ThemeContext);
   const { toggleTheme } = useContext(ThemeContext);
   return (
-    <div className="flex flex-col mt-10 mr-52 ">
-      <div className="flex flex-row justify-end text-xl ">
+    <div className="flex flex-col mt-10 mr-52 max:w-[64rem] max:mr-auto">
+      <div className="flex flex-row justify-end text-xl max:ml-auto">
         <button
           id="theme-toggle"
           onClick={toggleTheme}

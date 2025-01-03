@@ -6,7 +6,7 @@ function Skills() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="ml-52 mt-28">
+    <div className="ml-52 mt-28 max:hidden">
       <h1 className="text-[64px] font-semibold text-[#1F2937] dark:text-[#AEBCCF]">
         {language === "en" ? "Skills" : "Beceriler"}
       </h1>

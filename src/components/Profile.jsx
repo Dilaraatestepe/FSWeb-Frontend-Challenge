@@ -9,7 +9,7 @@ function Profile() {
       <h1 className="text-[64px] font-semibold text-[#1F2937] mt-6 mb-5 dark:text-[#AEBCCF]">
         {language == "tr" ? "Profil" : "Profile"}
       </h1>
-      <div className="flex justify-between">
+      <div className="flex justify-between max:flex-col max:gap-y-20">
         <div className="flex flex-col justify-start w-[24rem] ">
           <h2 className="text-[32px] text-[#4338CA] font-medium mb-6 dark:text-[#AEBCCF]">
             {language == "tr" ? "Profil" : "Profile"}
@@ -51,8 +51,8 @@ function Profile() {
             </div>
           </nav>
         </div>
-        <div className="flex flex-col w-[52rem] pl-48">
-          <h2 className="text-[32px] text-[#4338CA] font-medium mb-4 dark:text-[#B7AAFF]">
+        <div className="flex flex-col w-[52rem] pl-48 max:ml-[-12rem] ">
+          <h2 className="text-[32px] text-[#4338CA] font-medium mb-4 dark:text-[#B7AAFF] max:whitespace-nowrap">
             {language == "tr" ? "Hakkımda" : "About Me"}
           </h2>
           <p className="text-[18px] text-[#6B7280] ">
